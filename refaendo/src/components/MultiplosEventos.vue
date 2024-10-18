@@ -15,14 +15,14 @@
             }
         },
         methods: {
-            primeiro(txt, e) {
+            primeiro(txt) {
                 this.multiplos_eventos = txt;
             },
-            segundo(txt, e) {
+            segundo(txt) {
                 setTimeout(() => this.multiplos_eventos = txt, 500);
             },
             terceiro(){
-                setTimeout(() => this.multiplos_eventos = "", 1500); 
+                setTimeout(() => this.multiplos_eventos = "", 1500);
             }
         }
 

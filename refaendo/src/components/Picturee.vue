@@ -1,7 +1,7 @@
 <template>
     <div>
-    <img :src="avatar" :alt="descricao">
-    <MudarImagem @mudar-imagem="trocarImagem"/>
+        <img :src="avatar" :alt="descricao">
+        <MudarImagem @mudar-imagem="trocarImagem" />
     </div>
 </template>
 
@@ -9,13 +9,13 @@
 import MudarImagem from './MudarImagem.vue'
 
 export default {
-    name: 'Picture',
+    name: 'Picturee',
     components: {
         MudarImagem
     },
     data(){
         return{
-            avatar: "/img/avatar.png",
+            avatar:"/img/avatar.png",
             descricao: "Augusto Liberato"
         }
     },

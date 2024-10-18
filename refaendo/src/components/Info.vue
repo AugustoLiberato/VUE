@@ -9,22 +9,22 @@
                 {{ technology }}
             </li>
         </ul>
-        <p>Utilzo as seguintes tecnologias para front-end:</p>
+        <p>Utilizo as seguintes tecnologia para front-end</p>
         <ul>
             <li v-for="technology in frontend_technologies" :key="technology.id">
-            {{ technology.language }}
+                {{ technology.language }}
             </li>
         </ul>
         <div>
             <button @click="showEmail">{{ textoBotao }}</button>
         </div>
-        <p v-show="mostrar_email">Mande uma mensagem para: {{ email }} </p>
-        <p class="teste">Para acessar meu portfólio <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a></p>
+        <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
+        <p class="teste">Para acessar meu portfólio<a v-bind:href="meu_link" target="_blank">Basta clicar aqui</a></p>
         <Picture />
     </div>
 </template>
 <script>
-import Picture from './Picture.vue'
+import Picture from './Picturee.vue'
     export default {
         name: 'Info',
         components: {
@@ -36,7 +36,6 @@ import Picture from './Picture.vue'
         },
         data(){
             return {
-               
                 mostrar_email: false,
                 meu_link: 'https://google.com',
                 textoBotao: 'Mostrar e-mail',
@@ -44,19 +43,19 @@ import Picture from './Picture.vue'
                 frontend_technologies: [
                     {id: 1, language: 'HTML'},
                     {id: 2, language: 'CSS'},
-                    {id: 3, language: 'Vue'}
+                    {id: 3, languaga: 'Vue'}
                 ]
             }
         },
         methods: {
-           showEmail() {
-            this.mostrar_email = !this.mostrar_email
-            if(!this.mostrar_email){
-                this.textoBotao = 'Mostrar e-mail'
-            } else {
-                this.textoBotao = 'Esconder e-mail'
+            showEmail() {
+                this.mostrar_email = !this.mostrar_email
+                if(!this.mostrar_email){
+                    this.textoBotao = 'Mostar e-mail'
+                } else {
+                    this.textoBotao = 'Esconder e-mail'
+                }
             }
-           }
         }
     }
 </script>
@@ -65,5 +64,4 @@ import Picture from './Picture.vue'
 .paragrafo-pai {
     color: red;
 }
-
 </style>
