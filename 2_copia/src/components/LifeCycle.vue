@@ -4,10 +4,10 @@
 
 <script>
 export default {
-    name: 'LifeCycle',
+    name: 'LyfeCycle',
     data(){
         return {
-            nome: 'Ainda não sei'
+        nome: 'Ainda não sei'
         }
     },
     created(){
@@ -16,14 +16,14 @@ export default {
         }, 1000);
         this.lifeCycle()
     },
-    mounted() {
+    mounted(){
         setTimeout(() => {
             this.nome = 'Pedro'
         }, 2000)
         this.lifeCycle()
     },
     methods: {
-        lifeCycle() {
+        lifeCycle(){
             console.log("Executou")
         }
     }

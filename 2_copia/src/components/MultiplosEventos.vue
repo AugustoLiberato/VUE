@@ -4,10 +4,11 @@
         <p>{{ multiplos_eventos }}</p>
     </div>
 </template>
+
 <script>
-    export default{
-        name: 'MultiplosEventos',
-        data(){
+    export default {
+        name: "MultiplosEventos",
+        data(){//retorna um objeto
             return {
                 multiplos_eventos: "",
                 txt1: "Primeiro evento",
@@ -15,21 +16,22 @@
             }
         },
         methods: {
-            primeiro(txt) {
+            primeiro(txt, e) {
+                console.log(e.target);
                 this.multiplos_eventos = txt;
             },
             segundo(txt) {
                 setTimeout(() => this.multiplos_eventos = txt, 500);
             },
-            terceiro(){
+            terceiro() {
                 setTimeout(() => this.multiplos_eventos = "", 1500);
             }
         }
-
     }
 </script>
+
 <style scoped>
-    div{
+    div {
         margin: 100px;
     }
 </style>

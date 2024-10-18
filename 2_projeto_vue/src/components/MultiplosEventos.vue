@@ -7,7 +7,7 @@
 <script>
     export default{
         name: 'MultiplosEventos',
-        data(){
+        data(){//retorna um objeto  
             return {
                 multiplos_eventos: "",
                 txt1: "Primeiro evento",

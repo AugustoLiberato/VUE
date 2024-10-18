@@ -4,17 +4,18 @@
         <li><a href="#">Projetos</a></li>
         <li><a href="#">Contato</a></li>
         <li v-if="esta_logado"><a href="#">Meu Perfil</a></li>
+
     </ul>
 </template>
 <script>
     export default {
         name: 'Header',
-        props: ["esta_logado"]
+        props:["esta_logado"]
     }
 </script>
 
 <style scoped>
-    ul{
+    ul {
         list-style: none;
         display: flex;
         background: #111;
@@ -30,7 +31,7 @@
         transition: .5s;
     }
 
-    a:hover{
+    a:hover {
         color: turquoise;
     }
 </style>
